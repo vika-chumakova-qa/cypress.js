@@ -9,7 +9,7 @@ describe('Покупка аватара', function () {
          cy.get('.header__btns > [href="/shop"]').contains('Магазин'); //появляется иконка магазина
          cy.get('.header__btns > [href="/shop"]').contains('Магазин'); // иконка магазина видна пользователю
          cy.get('.header__btns > [href="/shop"]').click(); //переходим на страницу магазина
-         cy.get('.available > button').first().click(); // нажать кнопку купить у первого доступного для покупки покемона
+         cy.get('.available > button').first().click(); // нажать кнопку купить у первого доступного для покупки тренера
          cy.get('.pay__payform-v2 > :nth-child(2) > .pay_base-input-v2').type('5555 5555 5555 5599'); //ввести номер карты
          cy.get(':nth-child(1) > .pay_base-input-v2').type('1234'); //ввести срок действия карты
          cy.get('.pay-inputs-box > :nth-child(2) > .pay_base-input-v2').type('125'); // ввсети cvv код
